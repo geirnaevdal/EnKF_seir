@@ -8,7 +8,8 @@ MODULES = \
 	m_pfactors.F90\
 	m_random.F90\
 	m_Rmatrix.F90\
-	m_tecplot.F90
+	m_tecplot.F90\
+	m_tables.F90
 
 F90FILES = \
 	seir.F90

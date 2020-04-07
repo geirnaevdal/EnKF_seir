@@ -27,6 +27,13 @@ m_tecplot.o:      m_ensave.o
 m_tecplot.o:      m_ensstd.o
 m_tecplot.o:      MODEL.CPP
 m_tecplot.o:      mod_parameters.o
+m_tables.o:      mod_parameters.o
+m_tables.o:      m_agegroups.o
+m_tables.o:      makefile
+m_tables.o:      m_ensave.o
+m_tables.o:      m_ensstd.o
+m_tables.o:      MODEL.CPP
+m_tables.o:      mod_parameters.o
 seir.o:      m_agegroups.o
 seir.o:      makefile
 seir.o:      m_ens2mod.o
@@ -37,5 +44,6 @@ seir.o:      m_pfactors.o
 seir.o:      m_random.o
 seir.o:      m_Rmatrix.o
 seir.o:      m_tecplot.o
+seir.o:      m_tables.o
 slsode.o:      makefile
 slsode.o:      MODEL.CPP

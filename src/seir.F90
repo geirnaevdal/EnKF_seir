@@ -3,6 +3,7 @@ program seir
    use m_ens2mod
    use m_mod2ens
    use m_tecplot
+   use m_tables
    use m_random
    use m_agegroups
    use m_Rmatrix
@@ -179,6 +180,7 @@ program seir
       enddo
    enddo
    call tecplot(ens,enspar,nt,nrens,neq,nrpar,0)
+   call tables(ens,enspar,nt,nrens,neq,nrpar,0)
    if (.not.lenkf) stop
 
    print '(a)','Prior ensemble parameters:'
@@ -245,6 +247,7 @@ program seir
    enddo
    
    call tecplot(ens,enspar,nt,nrens,neq,nrpar,1)
+   call tables(ens,enspar,nt,nrens,neq,nrpar,1)
 
 end program
 
